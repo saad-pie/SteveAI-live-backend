@@ -1,0 +1,12 @@
+# netlify.toml
+[build]
+  # This is the command Netlify will execute to build your site.
+  # It runs your Python script which generates the HTML.
+  command = "python live.py"
+  
+  # This is the folder Netlify will publish (it should contain index.html).
+  publish = "dist"
+
+# Optional: Specifies a modern Python version for the build environment
+[build.environment]
+  PYTHON_VERSION = "3.11" 
